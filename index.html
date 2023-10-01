@@ -27,7 +27,9 @@
             <a class="navigation-link" href="index.html"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="likes">12</span>
           </li>
           <li class="navigation-item">
             <a class="button" href="catalog.html">Хочу сюда!</a>
@@ -38,15 +40,20 @@
 
     <main class="main-index">
       <h1 class="visually-hidden">Sedona</h1>
-      <img class="main-header" href="#" alt="Добро пожаловать в Седону">
-
+        <section class="hero">
+          <img class="main-header" href="#" alt="Добро пожаловать в Седону">
+        </section>
+        <secton class="reasons-title">
+        <p>Седона - небольшой городок в аризоне, заслуживающий большего!</p>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </secton>
         <section class="reasons">
-          <p>Седона - небольшой городок в аризоне, заслуживающий большего!</p>
-          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="reasons-list">
             <li class="reasons-item inverted">
               <h2>Настоящий городок</h2>
               <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </li>
+            <li>
               <img class="city-image" href="#" alt="Фото города Седона">
             </li>
             <li class="reasons-item">
@@ -64,6 +71,8 @@
             <li class="reasons-item inverted">
               <h2>Там есть мост дьявола</h2>
               <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </li>
+            <li>
               <img class= "devilbridge-image" href="#" alt="Фото Моста Дьявола">
             </li>
           </ul>
@@ -93,13 +102,16 @@
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="button" href="catalog.html">Поиск гостиницы в Седоне</a>
           </section>
+
+          <section>
+            <p>Подпишитесь на рассылку</p>
+            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <label class="visually-hidden"><input class="subscribe-email" type="email" placeholder="Ваш e-mail">Ваш e-mail</label>
+            <label class="visually-hidden"><input class="subscribe-button" type="submit" value="Подписаться">Подписаться</label>
+          </section>
     </main>
 
     <footer class="main-footer">
-      <p>Подпишитесь на рассылку</p>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <input class="subcribe-input" type="email" placeholder="Ваш e-mail">
-      <input class="subscribe-button" type="submit" value="Подписаться">
       <ul class="social-list">
         <li class="social-item">
           <a class="visually-hidden" href="https://vk.com/htmlacademy" target="_blank">VK</a>
