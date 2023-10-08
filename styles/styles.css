@@ -2,6 +2,7 @@
   font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
+  font-display: swap
   src: url(../fonts/ptsans-400.woff2);
 }
 
@@ -9,6 +10,7 @@
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
+  font-display: swap
   src: url(../fonts/ptsans-700.woff2);
 }
 
