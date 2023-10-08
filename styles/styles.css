@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
-  font-display: swap
+  font-display: swap;
   src: url(../fonts/ptsans-400.woff2);
 }
 
@@ -10,10 +10,135 @@
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
-  font-display: swap
+  font-display: swap;
   src: url(../fonts/ptsans-700.woff2);
 }
 
+.visually-hidden {
+  display: none;
+}
+
 body {
-  font-family: "PT Sans"
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.navigation-list {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: black;
+}
+
+.dark-button {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  size: 16px;
+  line-height: 20px;
+  background-color: rgba(117, 97, 87, 1);
+  text-transform: uppercase;
+}
+
+.light-button {
+  color: white;
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.hero {
+  background-image: url(/img/hero-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.section-header {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 620px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center
+}
+
+.reasons-item {
+  background-color:rgba(131, 179, 211, 0.12);
+}
+
+.reasons-header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.inverted {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.filters-main-header {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: rgb(168, 19, 19);
+}
+
+.catalog-filter-set {
+  border: none;
+  color: red;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.options-list, .hometype-list, .breadcrumbs-list, .advantages-list, .reasons-list, .button-list, .hotels-list {
+  list-style-type: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.search-results {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.hotels-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.card-header-link {
+  text-decoration: none;
+}
+
+.rating-label {
+  background-color: rgba(242, 242, 242, 1);
 }
