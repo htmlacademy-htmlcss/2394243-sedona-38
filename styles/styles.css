@@ -27,27 +27,42 @@
 
 body {
   margin: 0 auto;
+  width: 1200px;
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  max-width: 1280px;
   background-color: #F2F2F2;
 }
 
 .content-container {
   background-color: #FFFFFF;
-  max-width: 1200px;
   box-shadow: 0px 0px 15px 1px #00000033;
+}
+
+.light-text {
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.white-text {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  margin: auto 70px;
 }
 
 .logo {
   position: relative;
-  margin-left: 70px;
   margin-right: 28px;
 }
 
 .navigation {
+  height: 64px;
   display: flex;
   justify-content: flex-start;
 }
@@ -64,10 +79,6 @@ body {
   list-style-type: none;
 }
 
-.navigaton-user {
-  margin: 0;
-}
-
 .navigation-link {
   text-decoration: none;
   color: black;
@@ -78,25 +89,49 @@ body {
 }
 
 .navigation-user {
-  margin-left: 285px;
-  flex-grow: 1;
+  margin: 0;
+  margin-left: auto;
 }
 
-.search-icon, .likes-icon {
-  width: 44px;
-  height: 64px;
+.search-icon {
+  padding: 22px 12px;
+  background-image: url(../img/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
 }
 
 .likes {
+  position: absolute;
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
   text-align: center;
-  background-color: #7DB54F;
-  color: #FFFFFF;
+  color: hsl(0, 0%, 100%);
+  bottom: 5px;
+  left: 5px;
+}
+
+.likes-background {
+  position: relative;
   width: 20px;
   height: 20px;
-  border-radius: 10px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  left: 8px;
+  bottom: 11px;
+  text-align: center;
+}
+
+.likes-icon {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  padding: 22px 12px;
+  background-image: url(../img/likes-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .dark-button {
@@ -108,35 +143,28 @@ body {
   line-height: 20px;
   background-color: rgba(117, 97, 87, 1);
   text-transform: uppercase;
-  padding: 8px 24px;
 }
 
-.light-button {
-  color: white;
-  background-color: rgba(130, 179, 211, 1);
+.button-header {
+  color: #FFFFFF;
+  display: block;
+  width: 92px;
+  padding: 8px 34px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .hero {
-  background-image: url(../img/hero-background.jpg);
+  margin-bottom: 69px;
+  background-image: url(../img/hero-figure.svg), url(../img/hero-background.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center, center;
   text-align: center;
-  width: 1200px;
-  height: 485px;
+  min-height: 485px;
 }
 
-.main-header {
-  margin-top: 51px;
-  position: relative;
-  width: 1200px;
-}
-
-.hero-bottom-figure {
-  position: absolute;
-  background-image: url(../img/hero-figure.svg);
-  background-repeat: no-repeat;
-  top: 100px;
-  left: 100px;
+.hero-title {
+  padding-top: 51px;
 }
 
 .section-header {
@@ -145,9 +173,13 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   width: 620px;
+  margin: 0 auto;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.reason-section-header {
+  margin-bottom: 25px;
 }
 
 .section-description {
@@ -156,7 +188,18 @@ body {
   text-align: center
 }
 
+.reasons {
+  margin-bottom: 65px;
+  margin-top: 90px;
+}
+
+.reasons-title {
+  text-align: center;
+}
+
 .reasons-header {
+  margin: 0 auto;
+  width: 175px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -167,7 +210,6 @@ body {
 .reasons-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 385px 385px 385px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -181,51 +223,197 @@ body {
   grid-column: 1 / span 2;
 }
 
+.city-image, .devilbridge-image {
+  display: block;
+}
+
 .reasons-item {
-  background-color:rgba(131, 179, 211, 0.12);
+  padding: 112.5px 85px;
+  color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+  text-align: center;
+}
+
+.reasons-description {
+  margin: 0;
+}
+
+.reasons-item-inverted {
+  padding: 102px 85px;
+  background-color: rgba(130, 179, 211, 1);
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.decorate-line {
+  margin: 30px 85px;
+  width: 60px;
+  height: 2px;
+}
+
+.dark-decorate-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.light-decorate-line {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-section-header {
+  width: 505px;
 }
 
 .advantages-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 385px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-align: center;
+}
+
+.advantages-item {
+  margin-top: 64px;
+  padding: 183px 85px 81px 85px;
 }
 
 .burger {
   background-image: url(../img/advantage-food.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top 81px center;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .home {
   background-image: url(../img/advantage-home.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top 81px center;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .present {
   background-image: url(../img/advantage-present.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top 81px center;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.inverted {
-  color: #FFFFFF;
-  background-color: rgba(130, 179, 211, 1);
+.advantages-description {
+  padding-top: 30px;
 }
 
-.clear {
-  color: #FFFFFF;
+.interested {
+  margin-top: 96px;
+  text-align: center;
+}
+
+.interested-description {
+  margin-bottom: 54px;
+}
+
+.search-hotels-button {
+  display: inline-block;
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.subscribe {
+  background-image: url(../img/subscribe-background.jpg);
+  background-repeat: no-repeat;
+  margin-top: 96px;
+}
+
+.subscribe-header {
+  padding-top: 96px;
+}
+
+.subscribe-description {
+  margin: 0 auto;
+  margin-bottom: 54px;
+  width: 475px;
+}
+
+.subscribe-email {
+  padding: 0;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  height: 52px;
+  width: 432px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-button {
+  padding: 0;
+  height: 52px;
+  width: 232px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  box-shadow: none;
+}
+
+.subscribe-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 99px;
+}
+
+.main-footer {
+  margin-left: 70px;
+  margin-right: 70px;
+  min-height: 120px;
 }
 
 .telephone {
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  width: 142px;
+}
+
+.light-button {
+  color: white;
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.text-clarification {
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
 }
 
@@ -327,10 +515,6 @@ body {
   margin-right: 0;
 }
 
-.interested {
-  text-align: center;
-}
-
 .card-header-link {
   text-decoration: none;
 }
@@ -354,56 +538,12 @@ body {
   background-repeat: no-repeat;
 }
 
-.search-icon {
-  background-image: url(../img/search-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 20px;
-  height: 20px;
-}
-
-.likes-icon {
-  background-image: url(../img/likes-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 20px;
-  height: 20px;
-}
-
-.content-container {
-  background-color: #FFFFFF;
-  max-width: 1200px;
-  box-shadow: 0px 0px 15px 1px #00000033;
-}
-
 .dark-reason-background {
   background-color: #83B3D333;
 }
 
-.subscribe {
-  background-image: url(../img/subscribe-background.jpg);
-  background-repeat: no-repeat;
-}
-
-.contacts-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-.social-list {
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  width: 142px;
-}
-
-.advantages-list {
-  text-align: center;
-}
-
 .change-color-devlogo {
+  padding-top: 3px;
   color: #000000;
 }
 
