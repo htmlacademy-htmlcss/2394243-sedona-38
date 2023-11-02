@@ -281,7 +281,7 @@ body {
   background-image: url(../img/advantage-food.svg);
   background-repeat: no-repeat;
   background-position: top 81px center;
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: #ffffff;
 }
 
 .home {
@@ -457,6 +457,10 @@ body {
   line-height: 78px;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
 .catalog-filter-set {
   border: none;
   font-size: 18px;
@@ -590,4 +594,14 @@ body {
 
 .telephone:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-list a.active::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 68;
+  top: 20px;
+  height: 2px;
+  background-color: #756257;
 }
