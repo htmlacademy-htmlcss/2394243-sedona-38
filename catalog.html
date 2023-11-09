@@ -108,100 +108,122 @@
       </form>
     </section>
     <section class="hotels">
-      <form>
+      <form class="sort">
       <p class="search-results">Найдено гостиниц: <span class="total-hotels">38</span></p>
-      <select class="amount-filter">
+      <select class="sort-select">
         <option value="cheap-first">Сначала дешевые</option>
         <option value="expensive-first">Сначала дорогие</option>
       </select>
-    </form>
-
-    <ul class="view-list">
-      <li class="view-item">
-        <a class="view-button" href="#"><span class="visually-hidden">Плитка</span></a>
-        <img class="view-icon" src="img/view-tile.svg" alt="Отображать в виде плитки">
-      </li>
-      <li class="view-item">
-        <a class="view-button" href="#"><span class="visually-hidden">Крупная плитка</span></a>
-        <img class="view-icon" src="img/view-big-tile.svg" alt="Отображать в виде большой плитки">
-      </li>
-      <li class="view-item">
-        <a class="view-button" href="#"><span class="visually-hidden">Список</span></a>
-        <img class="view-icon" src="img/view-list.svg" alt="Отображать в виде списка">
-      </li>
+      <ul class="view-list">
+        <li class="view-item view-item-active">
+          <a class="view-button" href="#"><span class="visually-hidden">Плитка</span></a>
+          <img class="view-icon" src="img/view-tile.svg" alt="Отображать в виде плитки">
+        </li>
+        <li class="view-item">
+          <a class="view-button" href="#"><span class="visually-hidden">Крупная плитка</span></a>
+          <img class="view-icon" src="img/view-big-tile.svg" alt="Отображать в виде большой плитки">
+        </li>
+        <li class="view-item">
+          <a class="view-button" href="#"><span class="visually-hidden">Список</span></a>
+          <img class="view-icon" src="img/view-list.svg" alt="Отображать в виде списка">
+        </li>
     </ul>
+    </form>
     </section>
     <section>
       <ul class="hotels-list">
         <li class="hotels-item">
           <a href="#"><img src="img/hotel-1.jpg" width="300" height="212" alt="Фото звездного неба из пещеры"></a>
           <a class="card-header-link" href="#"><h2 class="hotels-title">Amara Resort & Spa</h2></a>
-          <p>Гостиница</p>
-          <p>От 4000 &#8381</p>
-          <a class="dark-button" href="#">Подробнее</a>
-          <a class="light-button" href="#">В избранное</a>
-          <p class="rating-label">Рейтинг: <span class="rating-number">8,5</span></p>
-          <div class="stars-rating star-4">
-            <span class="visually-hidden">Четырехзвездочный отель</span>
-          </div>
+          <ul class="card-label-list">
+              <li class="card-label-item"><p class="card-label">Гостиница</p></li>
+              <li class="card-label-item"><p class="card-label">От 4000 &#8381</p></li>
+          </ul>
+          <ul class="card-buttons-list">
+              <li class="card-buttons-item"><a class="card-button dark-button" href="#">Подробнее</a></li>
+              <li class="card-buttons-item"><a class="card-button light-button" href="#">В избранное</a></li>
+          </ul>
+          <ul class="rating-items-list">
+            <li class="rating-items-item"><div class="stars-rating star-4">
+              <span class="visually-hidden">Четырехзвездочный отель</span>
+            </div></li>
+            <li class="rating-items-item"><p class="rating-label">Рейтинг: <span class="rating-number">8,5</span></p></li>
+          </ul>
         </li>
         <li class="hotels-item">
           <a href="#"><img src="img/hotel-2.jpg" width="300" height="212" alt="Фото гор и радуги"></a>
           <a class="card-header-link" href="#"><h2 class="hotels-title">Villas at Poco Diablo</h2></a>
-          <p>Гостиница</p>
-          <p>От 5000 &#8381</p>
-          <a class="dark-button" href="#">Подробнее</a>
-          <a class="light-button" href="#"><span class="favourite-applied">В избранное</span></a>
-          <p class="rating-label">Рейтинг: <span class="rating-number">9,2</span></p>
-          <div class="stars-rating star-4">
+          <ul class="card-label-list">
+            <li class="card-label-item"><p class="card-label">Гостиница</p></li>
+            <li class="card-label-item"><p class="card-label">От 5000 &#8381</p></li>
+        </ul>
+        <ul class="card-buttons-list">
+            <li class="card-buttons-item"><a class="card-button dark-button" href="#">Подробнее</a></li>
+            <li class="card-buttons-item"><a class="card-button light-button favorites-button" href="#">В избранном</a></li>
+        </ul>
+        <ul class="rating-items-list">
+          <li class="rating-items-item"><div class="stars-rating star-4">
             <span class="visually-hidden">Четырехзвездочный отель</span>
-          </div>
-        </li>
+          </div></li>
+          <li class="rating-items-item"><p class="rating-label">Рейтинг: <span class="rating-number">9,2</span></p></li>
+        </ul>
+      </li>
         <li class="hotels-item">
           <a href="#"><img src="img/hotel-3.jpg" width="300" height="212" alt="Фото песчаной горы в лесу"></a>
           <a class="card-header-link" href="#"><h2 class="hotels-title">Desert Quail Inn</h2></a>
-          <p>Гостиница</p>
-          <p>От 2500 &#8381</p>
-          <a class="dark-button" href="#">Подробнее</a>
-          <a class="light-button" href="#">В избранное</a>
-          <p class="rating-label">Рейтинг: <span class="rating-number">6,9</span></p>
-          <div class="stars-rating star-3">
+          <ul class="card-label-list">
+            <li class="card-label-item"><p class="card-label">Гостиница</p></li>
+            <li class="card-label-item"><p class="card-label">От 2500 &#8381</p></li>
+        </ul>
+        <ul class="card-buttons-list">
+            <li class="card-buttons-item"><a class="card-button dark-button" href="#">Подробнее</a></li>
+            <li class="card-buttons-item"><a class="card-button light-button" href="#">В избранное</a></li>
+        </ul>
+        <ul class="rating-items-list">
+          <li class="rating-items-item"><div class="stars-rating star-3">
             <span class="visually-hidden">Трехзвездочный отель</span>
-          </div>
-        </li>
+          </div></li>
+          <li class="rating-items-item"><p class="rating-label">Рейтинг: <span class="rating-number">6,9</span></p></li>
+        </ul>
+      </li>
         <li class="hotels-item">
           <a href="#"><img src="img/hotel-4.jpg" width="300" height="212" alt="Фото горы на фоне звездного закатного неба"></a>
           <a class="card-header-link" href="#"><h2 class="hotels-title">GreenTree Inn</h2></a>
-          <p>Гостиница</p>
-          <p>От 1500 &#8381</p>
-          <a class="dark-button" href="#">Подробнее</a>
-          <a class="light-button" href="#">В избранное</a>
-          <p class="rating-label">Рейтинг: <span class="rating-number">5,0</span></p>
-          <div class="stars-rating star-2">
+          <ul class="card-label-list">
+            <li class="card-label-item"><p class="card-label">Гостиница</p></li>
+            <li class="card-label-item"><p class="card-label">От 1500 &#8381</p></li>
+        </ul>
+        <ul class="card-buttons-list">
+            <li class="card-buttons-item"><a class="card-button dark-button" href="#">Подробнее</a></li>
+            <li class="card-buttons-item"><a class="card-button light-button" href="#">В избранное</a></li>
+        </ul>
+        <ul class="rating-items-list">
+          <li class="rating-items-item"><div class="stars-rating star-2">
             <span class="visually-hidden">Двухзвездочный отель</span>
-          </div>
-        </li>
-      </ul>
+          </div></li>
+          <li class="rating-items-item"><p class="rating-label">Рейтинг: <span class="rating-number">5,0</span></p></li>
+        </ul>
+      </li>
     </section>
 
     <section class="page-buttons">
-      <ul class="page-buttons-list">
-        <li class="button-item">
-          <a class="light-button" href="#">1</a>
+      <ul class="page-buttons-list line-separator">
+        <li class="page-button-item">
+          <a class="light-button page-button" href="#">1</a>
         </li>
-        <li class="button-item">
-          <a class="light-button" href="#">2</a>
+        <li class="page-button-item">
+          <a class="light-button page-button" href="#">2</a>
         </li>
-        <li class="button-item">
-          <a class="light-button" href="#">3</a>
-        <li class="button-item">
-          <a class="light-button" href="#">4</a>
+        <li class="page-button-item">
+          <a class="light-button page-button" href="#">3</a>
+        <li class="page-button-item">
+          <a class="light-button page-button" href="#">4</a>
         </li>
-        <li class="button-item">
-          <p>...</p>
+        <li class="page-button-item">
+          <p class="page-button page-button-separator">...</p>
         </li>
-        <li class="button-item">
-          <a class="light-button" href="#">10</a>
+        <li class="page-button-item">
+          <a class="light-button page-button" href="#">10</a>
         </li>
       </ul>
     </section>

@@ -336,7 +336,7 @@ body {
 
 .subscribe-empty {
   color:#000000;
-  margin-top: 96px;
+  margin-top: 40px;
 }
 
 .subscribe-header {
@@ -425,8 +425,17 @@ body {
 }
 
 .light-button {
-  color: white;
+  color: #FFFFFF;
   background-color: #82B3D3;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.favorites-button {
+  color: #FFFFFF;
+  background-color: #7DB54F;
   border: none;
   outline: none;
   border-radius: 4px;
@@ -496,6 +505,9 @@ body {
 }
 
 .view-list {
+  margin: 0;
+  margin-left: 62px;
+  padding: 0;
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
@@ -503,14 +515,28 @@ body {
 }
 
 .view-item {
+  position: relative;
+  margin: 0;
+  margin-left: 8px;
   border: 2px solid #E5E5E5;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 4px;
 }
 
+.view-item-active::before {
+  position: absolute;
+  content: "";
+  width: 44px;
+  height: 44px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  bottom: 0;
+  left: 0;
+}
+
 .view-icon {
-  padding: 17px 16px;
+  padding: 16px 15px;
 }
 
 .filters {
@@ -529,6 +555,7 @@ body {
 }
 
 .catalog-filter {
+  margin-bottom: 49px;
   padding: 0;
   display: grid;
   grid-template-columns: 150.43px 150.43px 0 288px 191px;
@@ -753,7 +780,27 @@ body {
   left: 207px;
  }
 
+.sort {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.sort-select {
+  margin-left: 200px;
+  padding-left: 15px;
+  width: 292px;
+  height: 49px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .search-results {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -761,22 +808,29 @@ body {
 }
 
 .hotels-title {
+  margin: 0;
+  margin-top: 12px;
+  padding: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  color: #000000;
   text-decoration: none;
 }
 
 .hotels-list {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 70px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
   list-style-type: none;
 }
 
 .hotels-item {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  margin-right: 20px;
   padding: 20px;
 }
 
@@ -784,18 +838,113 @@ body {
   margin-right: 0;
 }
 
+.card-label-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-label {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.card-buttons-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-button {
+  width: 110px;
+  padding: 8px 15px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.rating-items-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-items-item {
+  height: 51px;
+}
+
+.rating-label {
+  font-size: 16px;
+  line-height: 20px;
+  width: 140px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  order: 1;
+}
+
+.stars-rating {
+  margin-top: 16px;
+  width: 140px;
+  height: 37px;
+}
+
+.line-separator::after {
+  position: absolute;
+  content:"";
+  width: 1060px;
+  height: 1px;
+  background-color:#E6E6E6;
+  top: -17px;
+}
+
 .page-buttons-list {
+  position: relative;
+  padding: 0;
+  margin-left: 70px;
+  margin-top: 58px;
   display: flex;
   list-style-type: none;
   align-items: baseline;
 }
 
-.button-item {
+.page-button-item {
   margin-right: 8px;
 }
 
-.button-item:last-child {
+.page-button-item:last-child {
   margin-right: 0;
+}
+
+.page-button {
+  display: block;
+  box-sizing: border-box;
+  min-width: 60px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+}
+
+.page-button-separator {
+  font-size: 22px;
 }
 
 .card-header-link {
