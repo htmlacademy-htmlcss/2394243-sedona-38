@@ -58,46 +58,54 @@
         <legend class="catalog-filter-title">Инфраструктура:</legend>
       <ul class="options-list">
         <li class="options-item">
-          <label><input class="options-checkbox" type="checkbox" label="Бассейн" name="SwimmingPool">Бассейн</label>
+          <label class="custom-checkbox"><input class="options-checkbox visually-hidden" value="value-1" type="checkbox" label="Бассейн" name="SwimmingPool" checked><span class="checkbox-mark"></span><span class="checkbox-label">Бассейн</span></label>
         </li>
         <li class="options-item">
-          <label><input class="options-checkbox" type="checkbox" name="Parking">Парковка</label>
+          <label class="custom-checkbox"><input class="options-checkbox visually-hidden" value="value-1" type="checkbox" name="Parking" checked><span class="checkbox-mark"></span><span class="checkbox-label">Парковка</span></label>
         </li>
         <li class="options-item">
-          <label><input class="options-checkbox" type="checkbox" name="Wi-Fi">Wi-Fi</label>
+          <label class="custom-checkbox"><input class="options-checkbox visually-hidden" value="value-1" type="checkbox" name="Wi-Fi"><span class="checkbox-mark"></span><span class="checkbox-label">Wi-Fi</span></label>
         </li>
       </ul>
       </fieldset>
-      <fieldset class="catalog-filter-set">
+      <fieldset class="catalog-filter-set hometype-filter">
         <legend class="catalog-filter-title">Тип Жилья:</legend>
-      <ul class="hometype-list">
-        <li class="hometype-item">
-          <label><input class="hometype-radio" value="Hotel" type="radio" name="Hotel">Гостиница</label>
+      <ul class="options-list">
+        <li class="options-item">
+          <label class="custom-radiobutton"><input class="hometype-radio visually-hidden" value="Hotel" type="radio" name="Hotel" checked><span class="radiobutton-mark"></span><span class="radiobutton-label">Гостиница</span></label>
         </li>
-        <li class="hometype-item">
-          <label><input class="hometype-radio" value="Motel" type="radio" name="Hotel">Мотель</label>
+        <li class="options-item">
+          <label class="custom-radiobutton"><input class="hometype-radio visually-hidden" value="Motel" type="radio" name="Hotel"><span class="radiobutton-mark"></span><span class="radiobutton-label">Мотель</span></label>
         </li>
-        <li class="hometype-item">
-          <label><input class="hometype-radio" value="Apartments" type="radio" name="Hotel">Апартаменты</label>
+        <li class="options-item">
+          <label class="custom-radiobutton"><input class="hometype-radio visually-hidden" value="Apartments" type="radio" name="Hotel"><span class="radiobutton-mark"></span><span class="radiobutton-label">Апартаменты</span></label>
         </li>
       </ul>
       </fieldset>
-      <fieldset class="catalog-filter-set">
+      <fieldset class="catalog-filter-set amount-filter">
         <legend class="catalog-filter-title">Стоимость, &#8381</legend>
-        <label><input class="input-amount-field left-amount-field" placeholder="от" type="number" name="min-amount"></label>
-        <label><input class="input-amount-field right-amount-field" placeholder="до" type="number" name="max-amount"></label>
+        <label class="min-amount-label"><span class="min-amount-placeholder">от</span><input class="input-amount-field min-amount-field" type="number" value="0" name="min-amount"></label>
+        <label class="max-amount-label"><span class="max-amount-placeholder">до</span><input class="input-amount-field max-amount-field" type="number" value="9000" name="max-amount"></label>
+        <div class="amount-slider">
+          <div class="all-bar">
+            <div class="current-bar">
+            <button class="min-amount-toggle" type="button"></button>
+            <button class="max-amount-toggle" type="button"></button>
+            </div>
+          </div>
+        </div>
       </fieldset>
-   <!-- бегунок  -->
-
-      <ul class="button-list">
-        <li class="button-item">
-          <label><input class="light-button" type="submit" value="Применить"><span class="visually-hidden">Применить</span></label>
-        </li>
-        <li class="button-list button-clear">
-          <label><input class="empty-button" type="reset" value="Сбросить"><span class="visually-hidden">Сбросить</span></label>
-        </li>
-      </ul>
-    </form>
+      <fieldset class="filter-buttons-set">
+          <ul class="filters-buttons-list">
+            <li class="filter-button-item">
+              <label><input class="light-button filter-button" type="submit" value="Применить"><span class="visually-hidden">Применить</span></label>
+            </li>
+            <li class="filter-button-item">
+              <label><input class="transparent-button filter-button filter-reset-button" type="reset" value="Сбросить"><span class="visually-hidden">Сбросить</span></label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
     </section>
     <section class="hotels">
       <form>
