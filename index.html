@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="img/favicon.svg">
   </head>
 
   <body>
@@ -41,83 +42,84 @@
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hidden">Sedona</h1>
         <section class="hero">
+          <h1 class="visually-hidden">Sedona</h1>
           <img class="hero-title" src="img/sedona-hero-title.svg" width="458" height="352" alt="Добро пожаловать в Седону">
         </section>
-        <secton class="reasons-title">
+        <section class="reasons-title">
         <p class="section-header reason-section-header">Седона &mdash; небольшой городок в аризоне, заслуживающий большего!</p>
         <p class="light-text text-clarification">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </secton>
+        </section>
         <section class="reasons">
           <ul class="reasons-list">
             <li class="reasons-item-inverted">
-              <h2 class="grid-header reasons-header light-decorate-line">Настоящий городок</h2>
+              <h3 class="grid-header reasons-header light-decorate-line">Настоящий городок</h2>
               <p class="white-text">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
             <li class="reasons-city-image">
               <img class="city-image" src="img/photo-city.jpg" width="800" height="385" alt="Фото города Седона">
             </li>
             <li class="reasons-item">
-              <h2 class="grid-header reasons-header dark-decorate-line">Небольшая площадь</h2>
+              <h3 class="grid-header reasons-header dark-decorate-line">Небольшая площадь</h2>
               <p class="light-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="reasons-item dark-reason-background">
-              <h2 class="grid-header reasons-header dark-decorate-line">Красивая дорога</h2>
+              <h3 class="grid-header reasons-header dark-decorate-line">Красивая дорога</h2>
               <p class="light-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li >
             <li class="reasons-item">
-              <h2 class="grid-header reasons-header dark-decorate-line">Мало туристов</h2>
+              <h3 class="grid-header reasons-header dark-decorate-line">Мало туристов</h2>
               <p class="light-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="reasons-devilbridge-image">
               <img class="devilbridge-image" src="img/photo-bridge.jpg" width="800" height="385" alt="Фото Моста Дьявола">
             </li>
             <li class="reasons-item-inverted">
-              <h2 class="grid-header reasons-header light-decorate-line">Там есть <br> мост дьявола</h2>
+              <h3 class="grid-header reasons-header light-decorate-line">Там есть <br> мост дьявола</h2>
               <p class="white-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
           </ul>
           </section>
 
           <section class="advantages">
-            <p class="section-header advantages-section-header">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <h2 class="section-header advantages-section-header">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="light-text text-clarification">Опытный персонал и качественное обслуживание!</p>
             <ul class="advantages-list">
               <li class="advantages-item home">
-                <h2 class="grid-header">Жильё</h2>
+                <h3 class="grid-header">Жильё</h2>
                 <p class="light-text advantages-description">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
               </li>
               <li class="advantages-item burger">
-                <h2 class="grid-header">Еда</h2>
+                <h3 class="grid-header">Еда</h2>
                 <p class="light-text advantages-description">Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advantages-item present">
-                <h2 class="grid-header">Сувениры</h2>
+                <h3 class="grid-header">Сувениры</h2>
                 <p class="light-text advantages-description">Не только китайского, <br> но и настоящего местного производства!</p>
               </li>
             </ul>
           </section>
 
           <section class="interested">
-            <p class="section-header">Заинтересовались?</p>
+            <h2 class="section-header">Заинтересовались?</h2>
             <p class="light-text text-clarification interested-description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="dark-button search-hotels-button" href="catalog.html">Поиск гостиницы в Седоне</a>
           </section>
 
           <section class="subscribe">
-            <p class="section-header white-text subscribe-header">Подпишитесь на рассылку</p>
+            <h2 class="section-header white-text subscribe-header">Подпишитесь на рассылку</h2>
             <p class="section-description white-text subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <ul class="subscribe-list">
-            <li><label><input class="subscribe-email" type="email" placeholder="Ваш e-mail"></label></li>
-            <li><label><input class="light-button subscribe-button" type="submit" value="Подписаться"></label></li>
-          </ul>
+            <form class="subscribe-list" action="https://echo.htmlacademy.ru" method="get">
+            <label><input class="subscribe-email" type="email" placeholder="Ваш e-mail" required></label>
+            <label><input class="light-button subscribe-button" type="submit" value="Подписаться"></label>
+            </form>
           </section>
     </main>
 
     <footer class="main-footer">
       <ul class="contacts-list">
-        <ul class="social-list">
+        <li class= socials-item>
+          <ul class="social-list">
         <li class="socials-item">
           <a class="social-link" href="https://vk.com/htmlacademy" target="_blank"><span class="visually-hidden">VK</span>
             <svg class="social-icon" width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,6 +141,7 @@
             </svg>
           </a>
         </li>
+      </li>
         </ul>
         <li class="contacts-item">
       <a class="telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
@@ -163,6 +166,50 @@
         </li>
     </ul>
     </footer>
+  </div>
+
+  <div class="modal-container">
+    <div class="modal modal-search">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="info-label">Дата Заезда:</p>
+          <label class="modal-label"><input class="date-selection" type="text" name="date-in" placeholder="Укажите дату" value="27 апреля 2020"></label>
+          <p class="warning-label error-label">Мы не можем отправить вас в прошлое.</p>
+          <p class="info-label">Дата Выезда:</p>
+          <label class="modal-label"><input class="date-selection" type="text" name="date-out" placeholder="Укажите дату" value="1 сентября 2021"></label>
+          <p class="warning-label">На эти даты есть свободные номера. Пока есть.</p>
+          <button type="button" class="count-button button-minus-adults">
+            <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
+              </svg>
+          </button>
+          <p class="info-label adults-label">Взрослые:</p>
+          <label class="modal-label"><input class="count-selection adults-selection" type="number" value="2" name="adults-count"></label>
+          <button type="button" class="count-button button-plus-adults">
+            <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+              </svg>
+          </button>
+          <p class="info-label kids-label">Дети:</p><span class="info-prompt"></span>
+          <button type="button" class="count-button button-minus-kids">
+            <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
+              </svg>
+          </button>
+          <label class="modal-label"><input class="count-selection kids-selection" type="number" value="2" name="kids-count"></label>
+          <button type="button" class="count-button button-plus-kids">
+            <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+              </svg>
+          </button>
+          <button type="submit" class="modal-search-button light-button" href="#">Найти</a>
+        </form>
+      </section>
+    </div>
   </div>
   </body>
 </html>
