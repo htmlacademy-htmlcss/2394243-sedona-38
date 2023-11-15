@@ -264,40 +264,46 @@
             <p class="warning-label">
               На эти даты есть свободные номера. Пока есть.
             </p>
-            <button type="button" class="count-button button-minus-adults">
-              <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кнопка уменьшить количество взрослых">
-                <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
-              </svg>
-            </button>
+
             <p class="info-label adults-label">
               Взрослые:
             </p>
             <label class="modal-label">
+              <button type="button" class="count-button button-minus-adults">
+                <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кнопка уменьшить количество взрослых">
+                  <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
+                </svg>
+              </button>
               <input class="count-selection adults-selection" type="number" value="2" name="adults-count" required>
+              <button type="button" class="count-button button-plus-adults">
+                <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кнопка увеличить количество взрослых">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+                </svg>
+              </button>
             </label>
-            <button type="button" class="count-button button-plus-adults">
-              <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кнопка увеличить количество взрослых">
-                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-              </svg>
-            </button>
+
             <p class="info-label kids-label">
-              Дети:
+                Дети:
+                <span class="info-prompt-wrapper">
+                  <span class="info-prompt" tabindex="1" aria-label="Информация."></span>
+                  <span class="info-prompt-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
             </p>
-            <span class="info-prompt"></span>
-            <span class="info-prompt-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-            <button type="button" class="count-button button-minus-kids">
-              <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кнопка уменьшить количество детей">
-                <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
-              </svg>
-            </button>
+
             <label class="modal-label">
+              <button type="button" class="count-button button-minus-kids">
+                <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кнопка уменьшить количество детей">
+                  <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
+                </svg>
+              </button>
               <input class="count-selection kids-selection" type="number" value="2" name="kids-count" required>
+              <button type="button" class="count-button button-plus-kids">
+                <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кнопка увеличить количество детей">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+                </svg>
+              </button>
             </label>
-            <button type="button" class="count-button button-plus-kids">
-              <svg class="count-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кнопка увеличить количество детей">
-                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-              </svg>
-            </button>
+
             <button type="submit" class="modal-search-button light-button">
               Найти
             </button>
