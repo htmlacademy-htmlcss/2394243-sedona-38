@@ -99,7 +99,15 @@ body {
   position: relative;
   text-decoration: none;
   color: #000000;
-  padding: 20px 16px;
+  padding: 19px 16px;
+}
+
+.navigation-link:hover {
+  background-color: #E6E6E6;
+}
+
+.navigation-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-user {
@@ -418,10 +426,16 @@ body {
   border: none;
   outline: none;
   border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2
 }
 
-.subscribe-email-catalog {
-  background-color: #F2F2F2;
+.subscribe-email:hover {
+  background-color: #E6E6E6;
+}
+
+.subscribe-email:focus {
+  background-color: #E6E6E6;
+  outline: 3px #83B3D3 solid;
 }
 
 .subscribe-button {
@@ -1321,7 +1335,7 @@ body {
   grid-template-columns: 137px 197px 133px 110px;
 }
 
-.modal-label {
+.зl {
   position: relative;
 }
 
