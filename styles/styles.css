@@ -107,7 +107,7 @@ body {
 }
 
 .navigation-link:active {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 40%;
 }
 
 .navigation-user {
